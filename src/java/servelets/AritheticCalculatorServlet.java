@@ -22,6 +22,7 @@ public class AritheticCalculatorServlet extends HttpServlet {
             throws ServletException, IOException {
         String firstInt = request.getParameter("fstint");
         String secondInt = request.getParameter("secint");
+        
         request.setAttribute("firstInt",firstInt);
         request.setAttribute("secInt",secondInt);
         
@@ -44,7 +45,7 @@ public class AritheticCalculatorServlet extends HttpServlet {
                     result=firstNum*secNum;
                 break;
                 case"%":
-                    result=firstNum%secNum;
+                    result=firstNum/secNum;
                 break;
             }
             
