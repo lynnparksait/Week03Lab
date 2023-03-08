@@ -20,6 +20,7 @@ public class AritheticCalculatorServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         String firstInt = request.getParameter("fstint");
         String secondInt = request.getParameter("secint");
         
